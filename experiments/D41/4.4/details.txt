@@ -1,0 +1,11 @@
+Petrinet D41;
+1 prefix: 1 violating --> activity_t
+7 Declare const (3 violating): Not-Coexistence(activity_i,activity_j) Absence(activity_h) ExclusiveChoice(activity_e,activity_f) precedence(activity_d,activity_c) Existence(activity_b) Response(activity_o,activity_p) choice(activity_c,activity_t);    
+Grounded;
+
+Algortihm: Astar blind
+
+Cost: 
+Planner time: 
+Grounding time: 84 ms
+

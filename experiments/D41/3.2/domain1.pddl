@@ -1,0 +1,10351 @@
+(define (domain Mining)
+(:requirements :typing :equality)
+(:types state)
+
+(:predicates
+(currstate ?s - state)
+(blocked ?s - state)
+(recovery_finished)
+(violated)
+)
+
+(:functions
+(total-cost)
+)
+
+(:action violate-activity_ad-ct0
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct1
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct2
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct3
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct4
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct5
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct6
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct7
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct8
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct9
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct10
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct11
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct12
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct13
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct14
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct15
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct16
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct17
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct18
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct19
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct20
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct21
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct22
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_ad-ct23
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_24)) (currstate s_0_22) )
+)
+
+(:action violate-activity_ad-ct24
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct25
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct26
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct27
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct28
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct29
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct30
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct31
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct32
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct33
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct34
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct35
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct36
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct37
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct38
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct39
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct40
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_ad-ct41
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_20)) (currstate s_0_21) )
+)
+
+(:action violate-activity_ad-ct42
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct43
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct44
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct45
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ad-ct46
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct47
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct48
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct49
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_ac-ct50
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_21)) (currstate s_0_22) )
+)
+
+(:action violate-activity_ac-ct51
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct52
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct53
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct54
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct55
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct56
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct57
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct58
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct59
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct60
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct61
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct62
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct63
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct64
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct65
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct66
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct67
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct68
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct69
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct70
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct71
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct72
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct73
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct74
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct75
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct76
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct77
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct78
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct79
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct80
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct81
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct82
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct83
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct84
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct85
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct86
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct87
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct88
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct89
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct90
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_ac-ct91
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_20)) (currstate s_0_24) )
+)
+
+(:action violate-activity_ac-ct92
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ac-ct93
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct94
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct95
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct96
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct97
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct98
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct99
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct100
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct101
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct102
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct103
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct104
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct105
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct106
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct107
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct108
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct109
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct110
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct111
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct112
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct113
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct114
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct115
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct116
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct117
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct118
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct119
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct120
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct121
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct122
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct123
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct124
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct125
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct126
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct127
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct128
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct129
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct130
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct131
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct132
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct133
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct134
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct135
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct136
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct137
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct138
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct139
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ab-ct140
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_ab-ct141
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_23)) (currstate s_0_18) )
+)
+
+(:action violate-activity_ss-ct142
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct143
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct144
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct145
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct146
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct147
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct148
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct149
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct150
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct151
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct152
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct153
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct154
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct155
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct156
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct157
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct158
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct159
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct160
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_ss-ct161
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_10)) (currstate s_0_11) )
+)
+
+(:action violate-activity_ss-ct162
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_ss-ct163
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_22)) (currstate s_0_23) )
+)
+
+(:action violate-activity_ss-ct164
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct165
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct166
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct167
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_ss-ct168
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_16)) (currstate s_0_17) )
+)
+
+(:action violate-activity_ss-ct169
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct170
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct171
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct172
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct173
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct174
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct175
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct176
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct177
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct178
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct179
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct180
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_ss-ct181
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_ss-ct182
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_19)) (currstate s_0_20) )
+)
+
+(:action sync-activity_ss-ct183
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_29)) (currstate s_0_30) )
+)
+
+(:action violate-activity_ss-ct184
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_ss-ct185
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_25)) (currstate s_0_26) )
+)
+
+(:action violate-activity_ss-ct186
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct187
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct188
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct189
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct190
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct191
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct192
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct193
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct194
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct195
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct196
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct197
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct198
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct199
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct200
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct201
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct202
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct203
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct204
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_aa-ct205
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_15)) (currstate s_0_19) )
+)
+
+(:action violate-activity_aa-ct206
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct207
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct208
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct209
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct210
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct211
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct212
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct213
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct214
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct215
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct216
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct217
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct218
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct219
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct220
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct221
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct222
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct223
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct224
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct225
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct226
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct227
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct228
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct229
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct230
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct231
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_aa-ct232
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct233
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct234
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct235
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct236
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct237
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct238
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct239
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct240
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct241
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct242
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct243
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct244
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct245
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct246
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct247
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct248
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct249
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct250
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct251
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct252
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct253
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct254
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct255
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct256
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_z-ct257
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_16)) (currstate s_0_17) )
+)
+
+(:action violate-activity_z-ct258
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct259
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct260
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct261
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct262
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct263
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct264
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct265
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct266
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct267
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct268
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct269
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct270
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct271
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct272
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct273
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct274
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct275
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct276
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct277
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_z-ct278
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct279
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct280
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct281
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct282
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct283
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct284
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct285
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct286
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct287
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct288
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct289
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct290
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct291
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct292
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct293
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct294
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct295
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct296
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct297
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct298
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct299
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct300
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct301
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct302
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct303
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct304
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct305
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct306
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct307
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct308
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct309
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct310
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct311
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct312
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct313
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct314
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct315
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct316
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct317
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct318
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct319
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct320
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct321
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_y-ct322
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_y-ct323
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_16)) (currstate s_0_17) )
+)
+
+(:action violate-activity_y-ct324
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct325
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct326
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct327
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct328
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct329
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct330
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct331
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct332
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct333
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct334
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct335
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct336
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct337
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct338
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct339
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct340
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct341
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct342
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct343
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct344
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct345
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct346
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct347
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct348
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct349
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct350
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct351
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct352
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct353
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct354
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct355
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct356
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct357
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct358
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct359
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct360
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct361
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct362
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct363
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct364
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct365
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct366
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct367
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct368
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct369
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_x-ct370
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_x-ct371
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_17)) (currstate s_0_18) )
+)
+
+(:action violate-activity_x-ct372
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct373
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct374
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct375
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct376
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct377
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct378
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct379
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct380
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct381
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct382
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct383
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct384
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct385
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct386
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct387
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct388
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct389
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct390
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct391
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct392
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct393
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct394
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct395
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct396
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct397
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct398
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct399
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct400
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct401
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct402
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct403
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct404
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct405
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct406
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct407
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct408
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct409
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct410
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct411
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct412
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct413
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct414
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct415
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct416
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct417
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct418
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_s-ct419
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_s-ct420
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_30)) (currstate s_0_18) )
+)
+
+(:action violate-activity_r-ct421
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct422
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct423
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct424
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct425
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct426
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct427
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct428
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct429
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct430
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct431
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct432
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct433
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct434
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct435
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_r-ct436
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_15)) (currstate s_0_25) )
+)
+
+(:action violate-activity_r-ct437
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct438
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct439
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct440
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct441
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct442
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct443
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct444
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct445
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct446
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct447
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct448
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct449
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct450
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct451
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct452
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct453
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct454
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct455
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct456
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct457
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct458
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct459
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct460
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct461
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct462
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct463
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct464
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct465
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_r-ct466
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct467
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct468
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct469
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct470
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct471
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct472
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct473
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_q-ct474
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_18)) (currstate s_0_1) )
+)
+
+(:action violate-activity_q-ct475
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct476
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct477
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct478
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct479
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct480
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct481
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct482
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct483
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct484
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct485
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct486
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct487
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct488
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct489
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct490
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct491
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct492
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct493
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct494
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct495
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct496
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct497
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct498
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct499
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct500
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct501
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct502
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct503
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct504
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct505
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct506
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct507
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct508
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct509
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct510
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct511
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct512
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct513
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_q-ct514
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct515
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_p-ct516
+:precondition (and (recovery_finished) (not (violated)) (currstate s_5_1) (not (currstate s_0_34)) (not (currstate s_0_25)) (not (currstate s_0_11)) (not (currstate s_0_15)) (not (currstate s_0_9)) (not (currstate s_0_27)) (not (currstate s_0_31)) (not (currstate s_0_1)) (not (currstate s_0_30)) (not (currstate s_0_6)) (not (currstate s_0_14)) (not (currstate s_0_18)) (not (currstate s_0_16)) (not (currstate s_0_15)) (not (currstate s_0_12)) (not (currstate s_0_17)) (not (currstate s_0_33)) (not (currstate s_0_35)) (not (currstate s_0_16)) (not (currstate s_0_21)) (not (currstate s_0_7)) (not (currstate s_0_32)) (not (currstate s_0_34)) (not (currstate s_0_2)) (not (currstate s_0_3)) (not (currstate s_0_26)) (not (currstate s_0_10)) (not (currstate s_0_16)) (not (currstate s_0_8)) (not (currstate s_0_4)) (not (currstate s_0_22)) (not (currstate s_0_23)) (not (currstate s_0_32)) (not (currstate s_0_24)) (not (currstate s_0_13)) (not (currstate s_0_26)) (not (currstate s_0_20)) (not (currstate s_0_0)) (not (currstate s_0_9)) (not (currstate s_0_28)) (not (currstate s_0_5)) (not (currstate s_0_29)) (not (currstate s_0_20)) (not (currstate s_0_19)) (not (currstate s_0_27)) (not (currstate s_0_15)) (not (currstate s_0_10)) (not (currstate s_0_26))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_5_1)) (currstate s_5_0) )
+)
+
+(:action violate-activity_p-ct517
+:precondition (and (not (violated)) (currstate s_0_25) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct518
+:precondition (and (not (violated)) (currstate s_0_11) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct519
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct520
+:precondition (and (not (violated)) (currstate s_0_9) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct521
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct522
+:precondition (and (not (violated)) (currstate s_0_31) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct523
+:precondition (and (not (violated)) (currstate s_0_1) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct524
+:precondition (and (not (violated)) (currstate s_0_30) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct525
+:precondition (and (not (violated)) (currstate s_0_6) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_p-ct526
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_14) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_14)) (currstate s_0_15) )
+)
+
+(:action violate-activity_p-ct527
+:precondition (and (not (violated)) (currstate s_0_18) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct528
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct529
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct530
+:precondition (and (not (violated)) (currstate s_0_12) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct531
+:precondition (and (not (violated)) (currstate s_0_17) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct532
+:precondition (and (not (violated)) (currstate s_0_33) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct533
+:precondition (and (not (violated)) (currstate s_0_35) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct534
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct535
+:precondition (and (not (violated)) (currstate s_0_21) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct536
+:precondition (and (not (violated)) (currstate s_0_7) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct537
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct538
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct539
+:precondition (and (not (violated)) (currstate s_0_2) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct540
+:precondition (and (not (violated)) (currstate s_0_3) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct541
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct542
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct543
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct544
+:precondition (and (not (violated)) (currstate s_0_8) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct545
+:precondition (and (not (violated)) (currstate s_0_4) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct546
+:precondition (and (not (violated)) (currstate s_0_22) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct547
+:precondition (and (not (violated)) (currstate s_0_23) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct548
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct549
+:precondition (and (not (violated)) (currstate s_0_24) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct550
+:precondition (and (not (violated)) (currstate s_0_13) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct551
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct552
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct553
+:precondition (and (not (violated)) (currstate s_0_0) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct554
+:precondition (and (not (violated)) (currstate s_0_9) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct555
+:precondition (and (not (violated)) (currstate s_0_28) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct556
+:precondition (and (not (violated)) (currstate s_0_5) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct557
+:precondition (and (not (violated)) (currstate s_0_29) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct558
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct559
+:precondition (and (not (violated)) (currstate s_0_19) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct560
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct561
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct562
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct563
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_5_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct564
+:precondition (and (not (violated)) (currstate s_0_34) (currstate s_5_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (not (currstate s_5_1)) (currstate s_5_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct565
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct566
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct567
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct568
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct569
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct570
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct571
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct572
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct573
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_p-ct574
+:precondition (and (recovery_finished) (not (violated)) (currstate s_5_1) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_14)) (currstate s_0_15) )
+)
+
+(:action violate-activity_p-ct575
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct576
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct577
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct578
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct579
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct580
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct581
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct582
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct583
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct584
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct585
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct586
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct587
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct588
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct589
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct590
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct591
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct592
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct593
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct594
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct595
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct596
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct597
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct598
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct599
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct600
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct601
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct602
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct603
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct604
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct605
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct606
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct607
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct608
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct609
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct610
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_p-ct611
+:precondition (and (not (violated)) (currstate s_5_1) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_0) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct612
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct613
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct614
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct615
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct616
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct617
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct618
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct619
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct620
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct621
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct622
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct623
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct624
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct625
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct626
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct627
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct628
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct629
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct630
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct631
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_w-ct632
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_15)) (currstate s_0_16) )
+)
+
+(:action violate-activity_w-ct633
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct634
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct635
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct636
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct637
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct638
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct639
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct640
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct641
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct642
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct643
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct644
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct645
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct646
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct647
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct648
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct649
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct650
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct651
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct652
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct653
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct654
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct655
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct656
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_w-ct657
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct658
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct659
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct660
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct661
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct662
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct663
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct664
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct665
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct666
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct667
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct668
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct669
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct670
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct671
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct672
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct673
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct674
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct675
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct676
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct677
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_v-ct678
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_34)) (currstate s_0_33) )
+)
+
+(:action sync-activity_v-ct679
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_27)) (currstate s_0_28) )
+)
+
+(:action violate-activity_v-ct680
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct681
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct682
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct683
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct684
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct685
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct686
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_v-ct687
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_31)) (currstate s_0_29) )
+)
+
+(:action violate-activity_v-ct688
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct689
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct690
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct691
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct692
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct693
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct694
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct695
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct696
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct697
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct698
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_v-ct699
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_26)) (currstate s_0_32) )
+)
+
+(:action violate-activity_v-ct700
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_v-ct701
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct702
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct703
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct704
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct705
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct706
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct707
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct708
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct709
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct710
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct711
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct712
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct713
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct714
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct715
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct716
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct717
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct718
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct719
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_u-ct720
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_34)) (currstate s_0_31) )
+)
+
+(:action violate-activity_u-ct721
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct722
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct723
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_u-ct724
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_32)) (currstate s_0_28) )
+)
+
+(:action violate-activity_u-ct725
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct726
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct727
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_u-ct728
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_33)) (currstate s_0_29) )
+)
+
+(:action violate-activity_u-ct729
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct730
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct731
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct732
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct733
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct734
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct735
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct736
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct737
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct738
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct739
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct740
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct741
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct742
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_u-ct743
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_u-ct744
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_26)) (currstate s_0_27) )
+)
+
+(:action violate-activity_u-ct745
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct746
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct747
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_t-ct748
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_26)) (currstate s_0_34) )
+)
+
+(:action violate-activity_t-ct749
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct750
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct751
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct752
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct753
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct754
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct755
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct756
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct757
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct758
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct759
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct760
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct761
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct762
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct763
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_t-ct764
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_32)) (currstate s_0_33) )
+)
+
+(:action violate-activity_t-ct765
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_t-ct766
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_27)) (currstate s_0_31) )
+)
+
+(:action sync-activity_t-ct767
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_28)) (currstate s_0_29) )
+)
+
+(:action violate-activity_t-ct768
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct769
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct770
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct771
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct772
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct773
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct774
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct775
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct776
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct777
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct778
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct779
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct780
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct781
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct782
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct783
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct784
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct785
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct786
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct787
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct788
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_t-ct789
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct790
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct791
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct792
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct793
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct794
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct795
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct796
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct797
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct798
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct799
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct800
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct801
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_k-ct802
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_9)) (currstate s_0_10) )
+)
+
+(:action violate-activity_k-ct803
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct804
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct805
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct806
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct807
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct808
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct809
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct810
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct811
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct812
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct813
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct814
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct815
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct816
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct817
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct818
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct819
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct820
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct821
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct822
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct823
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct824
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct825
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct826
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct827
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct828
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct829
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct830
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct831
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct832
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct833
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct834
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct835
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_k-ct836
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_j-ct837
+:precondition (and (recovery_finished) (not (violated)) (currstate s_1_2) (not (currstate s_0_10)) (not (currstate s_0_5)) (not (currstate s_0_9)) (not (currstate s_0_28)) (not (currstate s_0_29)) (not (currstate s_0_34)) (not (currstate s_0_27)) (not (currstate s_0_26)) (not (currstate s_0_20)) (not (currstate s_0_14)) (not (currstate s_0_19)) (not (currstate s_0_1)) (not (currstate s_0_31)) (not (currstate s_0_6)) (not (currstate s_0_30)) (not (currstate s_0_26)) (not (currstate s_0_27)) (not (currstate s_0_15)) (not (currstate s_0_25)) (not (currstate s_0_11)) (not (currstate s_0_9)) (not (currstate s_0_18)) (not (currstate s_0_16)) (not (currstate s_0_15)) (not (currstate s_0_17)) (not (currstate s_0_12)) (not (currstate s_0_8)) (not (currstate s_0_33)) (not (currstate s_0_2)) (not (currstate s_0_0)) (not (currstate s_0_34)) (not (currstate s_0_35)) (not (currstate s_0_21)) (not (currstate s_0_7)) (not (currstate s_0_16)) (not (currstate s_0_24)) (not (currstate s_0_13)) (not (currstate s_0_23)) (not (currstate s_0_16)) (not (currstate s_0_10)) (not (currstate s_0_32)) (not (currstate s_0_3)) (not (currstate s_0_32)) (not (currstate s_0_4)) (not (currstate s_0_15)) (not (currstate s_0_26)) (not (currstate s_0_22)) (not (currstate s_0_20))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_1_2)) (currstate s_1_1) (blocked s_1_1) )
+)
+
+(:action violate-activity_j-ct838
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct839
+:precondition (and (not (violated)) (currstate s_0_5) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct840
+:precondition (and (not (violated)) (currstate s_0_9) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_j-ct841
+:precondition (and (recovery_finished) (not (violated)) (currstate s_1_0) (not (currstate s_0_10)) (not (currstate s_0_5)) (not (currstate s_0_9)) (not (currstate s_0_28)) (not (currstate s_0_29)) (not (currstate s_0_34)) (not (currstate s_0_27)) (not (currstate s_0_26)) (not (currstate s_0_20)) (not (currstate s_0_14)) (not (currstate s_0_19)) (not (currstate s_0_1)) (not (currstate s_0_31)) (not (currstate s_0_6)) (not (currstate s_0_30)) (not (currstate s_0_26)) (not (currstate s_0_27)) (not (currstate s_0_15)) (not (currstate s_0_25)) (not (currstate s_0_11)) (not (currstate s_0_9)) (not (currstate s_0_18)) (not (currstate s_0_16)) (not (currstate s_0_15)) (not (currstate s_0_17)) (not (currstate s_0_12)) (not (currstate s_0_8)) (not (currstate s_0_33)) (not (currstate s_0_2)) (not (currstate s_0_0)) (not (currstate s_0_34)) (not (currstate s_0_35)) (not (currstate s_0_21)) (not (currstate s_0_7)) (not (currstate s_0_16)) (not (currstate s_0_24)) (not (currstate s_0_13)) (not (currstate s_0_23)) (not (currstate s_0_16)) (not (currstate s_0_10)) (not (currstate s_0_32)) (not (currstate s_0_3)) (not (currstate s_0_32)) (not (currstate s_0_4)) (not (currstate s_0_15)) (not (currstate s_0_26)) (not (currstate s_0_22)) (not (currstate s_0_20))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_1_0)) (currstate s_1_3) )
+)
+
+(:action violate-activity_j-ct842
+:precondition (and (not (violated)) (currstate s_0_28) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct843
+:precondition (and (not (violated)) (currstate s_0_29) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct844
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct845
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct846
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct847
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct848
+:precondition (and (not (violated)) (currstate s_0_14) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct849
+:precondition (and (not (violated)) (currstate s_0_19) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct850
+:precondition (and (not (violated)) (currstate s_0_1) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct851
+:precondition (and (not (violated)) (currstate s_0_31) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct852
+:precondition (and (not (violated)) (currstate s_0_6) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct853
+:precondition (and (not (violated)) (currstate s_0_30) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct854
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct855
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct856
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct857
+:precondition (and (not (violated)) (currstate s_0_25) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct858
+:precondition (and (not (violated)) (currstate s_0_11) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct859
+:precondition (and (not (violated)) (currstate s_0_9) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct860
+:precondition (and (not (violated)) (currstate s_0_18) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct861
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct862
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct863
+:precondition (and (not (violated)) (currstate s_0_17) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct864
+:precondition (and (not (violated)) (currstate s_0_12) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_j-ct865
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_8) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_8)) (currstate s_0_9) )
+)
+
+(:action violate-activity_j-ct866
+:precondition (and (not (violated)) (currstate s_0_33) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct867
+:precondition (and (not (violated)) (currstate s_0_2) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct868
+:precondition (and (not (violated)) (currstate s_0_0) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct869
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct870
+:precondition (and (not (violated)) (currstate s_0_35) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct871
+:precondition (and (not (violated)) (currstate s_0_21) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct872
+:precondition (and (not (violated)) (currstate s_0_7) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct873
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct874
+:precondition (and (not (violated)) (currstate s_0_24) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct875
+:precondition (and (not (violated)) (currstate s_0_13) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct876
+:precondition (and (not (violated)) (currstate s_0_23) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct877
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct878
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct879
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct880
+:precondition (and (not (violated)) (currstate s_0_3) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct881
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct882
+:precondition (and (not (violated)) (currstate s_0_4) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct883
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct884
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct885
+:precondition (and (not (violated)) (currstate s_0_22) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct886
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_1_2)) (not (currstate s_1_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct887
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_10)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct888
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_5)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct889
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_9)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct890
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_28)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct891
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_29)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct892
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_34)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct893
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_27)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct894
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_26)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct895
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_20)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct896
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_14)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct897
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_19)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct898
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_1)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct899
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_31)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct900
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_6)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct901
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_30)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct902
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_26)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct903
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_27)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct904
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_15)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct905
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_25)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct906
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_11)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct907
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_9)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct908
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_18)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct909
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_16)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct910
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_15)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct911
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_17)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct912
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_12)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action sync-activity_j-ct913
+:precondition (and (recovery_finished) (not (violated)) (currstate s_1_2) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_8)) (currstate s_0_9) (blocked s_1_1) )
+)
+
+(:action violate-activity_j-ct914
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_33)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct915
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_2)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct916
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_0)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct917
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_34)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct918
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_35)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct919
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_21)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct920
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_7)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct921
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_16)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct922
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_24)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct923
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_13)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct924
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_23)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct925
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_16)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct926
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_10)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct927
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_32)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct928
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_3)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct929
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_32)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct930
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_4)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct931
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_15)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct932
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_26)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct933
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_22)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct934
+:precondition (and (not (violated)) (currstate s_1_2) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_1) (not (currstate s_0_20)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct935
+:precondition (and (not (violated)) (currstate s_0_10) (currstate s_1_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (not (currstate s_1_0)) (currstate s_1_3) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct936
+:precondition (and (not (violated)) (currstate s_0_5) (currstate s_1_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (not (currstate s_1_0)) (currstate s_1_3) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct937
+:precondition (and (not (violated)) (currstate s_0_9) (currstate s_1_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (not (currstate s_1_0)) (currstate s_1_3) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct938
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct939
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct940
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct941
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct942
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct943
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct944
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct945
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct946
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct947
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct948
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct949
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct950
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct951
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct952
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct953
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct954
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct955
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct956
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct957
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct958
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct959
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct960
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_j-ct961
+:precondition (and (recovery_finished) (not (violated)) (currstate s_1_0) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_8)) (currstate s_0_9) )
+)
+
+(:action violate-activity_j-ct962
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct963
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct964
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct965
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct966
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct967
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct968
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct969
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct970
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct971
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct972
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct973
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct974
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct975
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct976
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct977
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct978
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct979
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct980
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct981
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_j-ct982
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_3) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct983
+:precondition (and (not (violated)) (currstate s_0_29) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct984
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct985
+:precondition (and (not (violated)) (currstate s_0_5) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct986
+:precondition (and (not (violated)) (currstate s_0_9) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_i-ct987
+:precondition (and (recovery_finished) (not (violated)) (currstate s_1_0) (not (currstate s_0_29)) (not (currstate s_0_10)) (not (currstate s_0_5)) (not (currstate s_0_9)) (not (currstate s_0_28)) (not (currstate s_0_34)) (not (currstate s_0_27)) (not (currstate s_0_26)) (not (currstate s_0_20)) (not (currstate s_0_14)) (not (currstate s_0_19)) (not (currstate s_0_6)) (not (currstate s_0_31)) (not (currstate s_0_1)) (not (currstate s_0_30)) (not (currstate s_0_26)) (not (currstate s_0_15)) (not (currstate s_0_25)) (not (currstate s_0_27)) (not (currstate s_0_11)) (not (currstate s_0_9)) (not (currstate s_0_18)) (not (currstate s_0_16)) (not (currstate s_0_15)) (not (currstate s_0_7)) (not (currstate s_0_34)) (not (currstate s_0_17)) (not (currstate s_0_12)) (not (currstate s_0_35)) (not (currstate s_0_2)) (not (currstate s_0_33)) (not (currstate s_0_0)) (not (currstate s_0_21)) (not (currstate s_0_16)) (not (currstate s_0_13)) (not (currstate s_0_24)) (not (currstate s_0_16)) (not (currstate s_0_22)) (not (currstate s_0_10)) (not (currstate s_0_23)) (not (currstate s_0_4)) (not (currstate s_0_8)) (not (currstate s_0_3)) (not (currstate s_0_32)) (not (currstate s_0_32)) (not (currstate s_0_15)) (not (currstate s_0_26)) (not (currstate s_0_20))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_1_0)) (currstate s_1_2) )
+)
+
+(:action violate-activity_i-ct988
+:precondition (and (not (violated)) (currstate s_0_28) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_i-ct989
+:precondition (and (recovery_finished) (not (violated)) (currstate s_1_3) (not (currstate s_0_29)) (not (currstate s_0_10)) (not (currstate s_0_5)) (not (currstate s_0_9)) (not (currstate s_0_28)) (not (currstate s_0_34)) (not (currstate s_0_27)) (not (currstate s_0_26)) (not (currstate s_0_20)) (not (currstate s_0_14)) (not (currstate s_0_19)) (not (currstate s_0_6)) (not (currstate s_0_31)) (not (currstate s_0_1)) (not (currstate s_0_30)) (not (currstate s_0_26)) (not (currstate s_0_15)) (not (currstate s_0_25)) (not (currstate s_0_27)) (not (currstate s_0_11)) (not (currstate s_0_9)) (not (currstate s_0_18)) (not (currstate s_0_16)) (not (currstate s_0_15)) (not (currstate s_0_7)) (not (currstate s_0_34)) (not (currstate s_0_17)) (not (currstate s_0_12)) (not (currstate s_0_35)) (not (currstate s_0_2)) (not (currstate s_0_33)) (not (currstate s_0_0)) (not (currstate s_0_21)) (not (currstate s_0_16)) (not (currstate s_0_13)) (not (currstate s_0_24)) (not (currstate s_0_16)) (not (currstate s_0_22)) (not (currstate s_0_10)) (not (currstate s_0_23)) (not (currstate s_0_4)) (not (currstate s_0_8)) (not (currstate s_0_3)) (not (currstate s_0_32)) (not (currstate s_0_32)) (not (currstate s_0_15)) (not (currstate s_0_26)) (not (currstate s_0_20))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_1_3)) (currstate s_1_1) (blocked s_1_1) )
+)
+
+(:action violate-activity_i-ct990
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct991
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct992
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct993
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct994
+:precondition (and (not (violated)) (currstate s_0_14) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct995
+:precondition (and (not (violated)) (currstate s_0_19) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct996
+:precondition (and (not (violated)) (currstate s_0_6) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct997
+:precondition (and (not (violated)) (currstate s_0_31) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct998
+:precondition (and (not (violated)) (currstate s_0_1) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct999
+:precondition (and (not (violated)) (currstate s_0_30) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1000
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1001
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1002
+:precondition (and (not (violated)) (currstate s_0_25) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1003
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1004
+:precondition (and (not (violated)) (currstate s_0_11) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1005
+:precondition (and (not (violated)) (currstate s_0_9) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1006
+:precondition (and (not (violated)) (currstate s_0_18) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1007
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1008
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_i-ct1009
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_7) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_7)) (currstate s_0_8) )
+)
+
+(:action violate-activity_i-ct1010
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1011
+:precondition (and (not (violated)) (currstate s_0_17) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1012
+:precondition (and (not (violated)) (currstate s_0_12) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1013
+:precondition (and (not (violated)) (currstate s_0_35) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1014
+:precondition (and (not (violated)) (currstate s_0_2) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1015
+:precondition (and (not (violated)) (currstate s_0_33) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1016
+:precondition (and (not (violated)) (currstate s_0_0) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1017
+:precondition (and (not (violated)) (currstate s_0_21) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1018
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1019
+:precondition (and (not (violated)) (currstate s_0_13) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1020
+:precondition (and (not (violated)) (currstate s_0_24) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1021
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1022
+:precondition (and (not (violated)) (currstate s_0_22) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1023
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1024
+:precondition (and (not (violated)) (currstate s_0_23) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1025
+:precondition (and (not (violated)) (currstate s_0_4) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1026
+:precondition (and (not (violated)) (currstate s_0_8) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1027
+:precondition (and (not (violated)) (currstate s_0_3) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1028
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1029
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1030
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1031
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1032
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_1_0)) (not (currstate s_1_3))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1033
+:precondition (and (not (violated)) (currstate s_0_29) (currstate s_1_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (not (currstate s_1_0)) (currstate s_1_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1034
+:precondition (and (not (violated)) (currstate s_0_29) (currstate s_1_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (not (currstate s_1_3)) (currstate s_1_1) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1035
+:precondition (and (not (violated)) (currstate s_0_10) (currstate s_1_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (not (currstate s_1_0)) (currstate s_1_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1036
+:precondition (and (not (violated)) (currstate s_0_10) (currstate s_1_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (not (currstate s_1_3)) (currstate s_1_1) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1037
+:precondition (and (not (violated)) (currstate s_0_5) (currstate s_1_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (not (currstate s_1_0)) (currstate s_1_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1038
+:precondition (and (not (violated)) (currstate s_0_5) (currstate s_1_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (not (currstate s_1_3)) (currstate s_1_1) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1039
+:precondition (and (not (violated)) (currstate s_0_9) (currstate s_1_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (not (currstate s_1_0)) (currstate s_1_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1040
+:precondition (and (not (violated)) (currstate s_0_9) (currstate s_1_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (not (currstate s_1_3)) (currstate s_1_1) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1041
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1042
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1043
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1044
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1045
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1046
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1047
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1048
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1049
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1050
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1051
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1052
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1053
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1054
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1055
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1056
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1057
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1058
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1059
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1060
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_i-ct1061
+:precondition (and (recovery_finished) (not (violated)) (currstate s_1_0) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_7)) (currstate s_0_8) )
+)
+
+(:action violate-activity_i-ct1062
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1063
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1064
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1065
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1066
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1067
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1068
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1069
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1070
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1071
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1072
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1073
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1074
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1075
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1076
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1077
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1078
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1079
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1080
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1081
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1082
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1083
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1084
+:precondition (and (not (violated)) (currstate s_1_0) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_2) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1085
+:precondition (and (not (violated)) (currstate s_0_28) (currstate s_1_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (not (currstate s_1_3)) (currstate s_1_1) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1086
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_34)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1087
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_27)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1088
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_26)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1089
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_20)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1090
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_14)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1091
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_19)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1092
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_6)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1093
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_31)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1094
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_1)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1095
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_30)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1096
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_26)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1097
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_15)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1098
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_25)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1099
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_27)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1100
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_11)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1101
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_9)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1102
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_18)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1103
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_16)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1104
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_15)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action sync-activity_i-ct1105
+:precondition (and (recovery_finished) (not (violated)) (currstate s_1_3) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_7)) (currstate s_0_8) (blocked s_1_1) )
+)
+
+(:action violate-activity_i-ct1106
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_34)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1107
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_17)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1108
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_12)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1109
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_35)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1110
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_2)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1111
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_33)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1112
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_0)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1113
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_21)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1114
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_16)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1115
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_13)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1116
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_24)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1117
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_16)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1118
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_22)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1119
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_10)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1120
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_23)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1121
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_4)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1122
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_8)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1123
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_3)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1124
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_32)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1125
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_32)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1126
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_15)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1127
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_26)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_i-ct1128
+:precondition (and (not (violated)) (currstate s_1_3) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_1) (not (currstate s_0_20)) (currstate s_0_dummy) (blocked s_1_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1129
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1130
+:precondition (and (not (violated)) (currstate s_0_28) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1131
+:precondition (and (not (violated)) (currstate s_0_29) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1132
+:precondition (and (not (violated)) (currstate s_0_5) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1133
+:precondition (and (not (violated)) (currstate s_0_9) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1134
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1135
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1136
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1137
+:precondition (and (not (violated)) (currstate s_0_14) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1138
+:precondition (and (not (violated)) (currstate s_0_19) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1139
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1140
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1141
+:precondition (and (not (violated)) (currstate s_0_1) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1142
+:precondition (and (not (violated)) (currstate s_0_31) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1143
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1144
+:precondition (and (not (violated)) (currstate s_0_25) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1145
+:precondition (and (not (violated)) (currstate s_0_11) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1146
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1147
+:precondition (and (not (violated)) (currstate s_0_30) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1148
+:precondition (and (not (violated)) (currstate s_0_9) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1149
+:precondition (and (not (violated)) (currstate s_0_18) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1150
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1151
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_h-ct1152
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_6) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_6)) (currstate s_0_7) )
+)
+
+(:action violate-activity_h-ct1153
+:precondition (and (not (violated)) (currstate s_0_17) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1154
+:precondition (and (not (violated)) (currstate s_0_12) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1155
+:precondition (and (not (violated)) (currstate s_0_35) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_h-ct1156
+:precondition (and (recovery_finished) (not (violated)) (currstate s_2_0) (not (currstate s_0_10)) (not (currstate s_0_28)) (not (currstate s_0_29)) (not (currstate s_0_5)) (not (currstate s_0_9)) (not (currstate s_0_15)) (not (currstate s_0_20)) (not (currstate s_0_27)) (not (currstate s_0_14)) (not (currstate s_0_19)) (not (currstate s_0_26)) (not (currstate s_0_34)) (not (currstate s_0_1)) (not (currstate s_0_31)) (not (currstate s_0_15)) (not (currstate s_0_25)) (not (currstate s_0_11)) (not (currstate s_0_27)) (not (currstate s_0_30)) (not (currstate s_0_9)) (not (currstate s_0_18)) (not (currstate s_0_16)) (not (currstate s_0_15)) (not (currstate s_0_6)) (not (currstate s_0_17)) (not (currstate s_0_12)) (not (currstate s_0_35)) (not (currstate s_0_21)) (not (currstate s_0_34)) (not (currstate s_0_0)) (not (currstate s_0_33)) (not (currstate s_0_2)) (not (currstate s_0_16)) (not (currstate s_0_7)) (not (currstate s_0_26)) (not (currstate s_0_13)) (not (currstate s_0_16)) (not (currstate s_0_24)) (not (currstate s_0_10)) (not (currstate s_0_22)) (not (currstate s_0_4)) (not (currstate s_0_8)) (not (currstate s_0_23)) (not (currstate s_0_3)) (not (currstate s_0_32)) (not (currstate s_0_32)) (not (currstate s_0_26)) (not (currstate s_0_20))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) )
+)
+
+(:action violate-activity_h-ct1157
+:precondition (and (not (violated)) (currstate s_0_21) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1158
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1159
+:precondition (and (not (violated)) (currstate s_0_0) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1160
+:precondition (and (not (violated)) (currstate s_0_33) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1161
+:precondition (and (not (violated)) (currstate s_0_2) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1162
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1163
+:precondition (and (not (violated)) (currstate s_0_7) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1164
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1165
+:precondition (and (not (violated)) (currstate s_0_13) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1166
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1167
+:precondition (and (not (violated)) (currstate s_0_24) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1168
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1169
+:precondition (and (not (violated)) (currstate s_0_22) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1170
+:precondition (and (not (violated)) (currstate s_0_4) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1171
+:precondition (and (not (violated)) (currstate s_0_8) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1172
+:precondition (and (not (violated)) (currstate s_0_23) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1173
+:precondition (and (not (violated)) (currstate s_0_3) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1174
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1175
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1176
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1177
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_2_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1178
+:precondition (and (not (violated)) (currstate s_0_10) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1179
+:precondition (and (not (violated)) (currstate s_0_28) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1180
+:precondition (and (not (violated)) (currstate s_0_29) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1181
+:precondition (and (not (violated)) (currstate s_0_5) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1182
+:precondition (and (not (violated)) (currstate s_0_9) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1183
+:precondition (and (not (violated)) (currstate s_0_15) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1184
+:precondition (and (not (violated)) (currstate s_0_20) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1185
+:precondition (and (not (violated)) (currstate s_0_27) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1186
+:precondition (and (not (violated)) (currstate s_0_14) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1187
+:precondition (and (not (violated)) (currstate s_0_19) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1188
+:precondition (and (not (violated)) (currstate s_0_26) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1189
+:precondition (and (not (violated)) (currstate s_0_34) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1190
+:precondition (and (not (violated)) (currstate s_0_1) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1191
+:precondition (and (not (violated)) (currstate s_0_31) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1192
+:precondition (and (not (violated)) (currstate s_0_15) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1193
+:precondition (and (not (violated)) (currstate s_0_25) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1194
+:precondition (and (not (violated)) (currstate s_0_11) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1195
+:precondition (and (not (violated)) (currstate s_0_27) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1196
+:precondition (and (not (violated)) (currstate s_0_30) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1197
+:precondition (and (not (violated)) (currstate s_0_9) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1198
+:precondition (and (not (violated)) (currstate s_0_18) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1199
+:precondition (and (not (violated)) (currstate s_0_16) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1200
+:precondition (and (not (violated)) (currstate s_0_15) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action sync-activity_h-ct1201
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_6) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_6)) (currstate s_0_7) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) )
+)
+
+(:action violate-activity_h-ct1202
+:precondition (and (not (violated)) (currstate s_0_17) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1203
+:precondition (and (not (violated)) (currstate s_0_12) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1204
+:precondition (and (not (violated)) (currstate s_0_35) (currstate s_2_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (not (currstate s_2_0)) (currstate s_2_1) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1205
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_21)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1206
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_34)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1207
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_0)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1208
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_33)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1209
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_2)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1210
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_16)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1211
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_7)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1212
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_26)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1213
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_13)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1214
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_16)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1215
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_24)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1216
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_10)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1217
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_22)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1218
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_4)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1219
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_8)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1220
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_23)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1221
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_3)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1222
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_32)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1223
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_32)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1224
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_26)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_h-ct1225
+:precondition (and (not (violated)) (currstate s_2_0) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_1) (not (currstate s_0_20)) (currstate s_0_dummy) (blocked s_2_1) (increase (total-cost) 3))
+)
+
+(:action sync-activity_o-ct1226
+:precondition (and (recovery_finished) (not (violated)) (currstate s_5_0) (not (currstate s_0_34)) (not (currstate s_0_11)) (not (currstate s_0_15)) (not (currstate s_0_9)) (not (currstate s_0_1)) (not (currstate s_0_31)) (not (currstate s_0_6)) (not (currstate s_0_30)) (not (currstate s_0_20)) (not (currstate s_0_19)) (not (currstate s_0_18)) (not (currstate s_0_13)) (not (currstate s_0_16)) (not (currstate s_0_12)) (not (currstate s_0_17)) (not (currstate s_0_35)) (not (currstate s_0_16)) (not (currstate s_0_21)) (not (currstate s_0_33)) (not (currstate s_0_7)) (not (currstate s_0_3)) (not (currstate s_0_2)) (not (currstate s_0_32)) (not (currstate s_0_34)) (not (currstate s_0_15)) (not (currstate s_0_27)) (not (currstate s_0_26)) (not (currstate s_0_25)) (not (currstate s_0_10)) (not (currstate s_0_16)) (not (currstate s_0_22)) (not (currstate s_0_23)) (not (currstate s_0_8)) (not (currstate s_0_4)) (not (currstate s_0_26)) (not (currstate s_0_24)) (not (currstate s_0_20)) (not (currstate s_0_5)) (not (currstate s_0_28)) (not (currstate s_0_0)) (not (currstate s_0_32)) (not (currstate s_0_10)) (not (currstate s_0_14)) (not (currstate s_0_27)) (not (currstate s_0_29)) (not (currstate s_0_9)) (not (currstate s_0_15)) (not (currstate s_0_26))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_5_0)) (currstate s_5_1) )
+)
+
+(:action violate-activity_o-ct1227
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1228
+:precondition (and (not (violated)) (currstate s_0_11) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1229
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1230
+:precondition (and (not (violated)) (currstate s_0_9) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1231
+:precondition (and (not (violated)) (currstate s_0_1) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1232
+:precondition (and (not (violated)) (currstate s_0_31) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1233
+:precondition (and (not (violated)) (currstate s_0_6) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1234
+:precondition (and (not (violated)) (currstate s_0_30) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1235
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1236
+:precondition (and (not (violated)) (currstate s_0_19) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1237
+:precondition (and (not (violated)) (currstate s_0_18) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_o-ct1238
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_13) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_13)) (currstate s_0_14) )
+)
+
+(:action violate-activity_o-ct1239
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1240
+:precondition (and (not (violated)) (currstate s_0_12) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1241
+:precondition (and (not (violated)) (currstate s_0_17) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1242
+:precondition (and (not (violated)) (currstate s_0_35) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1243
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1244
+:precondition (and (not (violated)) (currstate s_0_21) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1245
+:precondition (and (not (violated)) (currstate s_0_33) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1246
+:precondition (and (not (violated)) (currstate s_0_7) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1247
+:precondition (and (not (violated)) (currstate s_0_3) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1248
+:precondition (and (not (violated)) (currstate s_0_2) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1249
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1250
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1251
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1252
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1253
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1254
+:precondition (and (not (violated)) (currstate s_0_25) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1255
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1256
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1257
+:precondition (and (not (violated)) (currstate s_0_22) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1258
+:precondition (and (not (violated)) (currstate s_0_23) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1259
+:precondition (and (not (violated)) (currstate s_0_8) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1260
+:precondition (and (not (violated)) (currstate s_0_4) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1261
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1262
+:precondition (and (not (violated)) (currstate s_0_24) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1263
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1264
+:precondition (and (not (violated)) (currstate s_0_5) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1265
+:precondition (and (not (violated)) (currstate s_0_28) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1266
+:precondition (and (not (violated)) (currstate s_0_0) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1267
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1268
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1269
+:precondition (and (not (violated)) (currstate s_0_14) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1270
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1271
+:precondition (and (not (violated)) (currstate s_0_29) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1272
+:precondition (and (not (violated)) (currstate s_0_9) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1273
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1274
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_5_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1275
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1276
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1277
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1278
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1279
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1280
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1281
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1282
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1283
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1284
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1285
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_o-ct1286
+:precondition (and (recovery_finished) (not (violated)) (currstate s_5_0) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_13)) (currstate s_0_14) )
+)
+
+(:action violate-activity_o-ct1287
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1288
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1289
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1290
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1291
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1292
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1293
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1294
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1295
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1296
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1297
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1298
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1299
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1300
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1301
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1302
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1303
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1304
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1305
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1306
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1307
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1308
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1309
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1310
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1311
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1312
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1313
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1314
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1315
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1316
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1317
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1318
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1319
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1320
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1321
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_o-ct1322
+:precondition (and (not (violated)) (currstate s_5_0) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_1) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1323
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1324
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1325
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1326
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1327
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1328
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1329
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1330
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1331
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1332
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1333
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1334
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1335
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1336
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1337
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1338
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1339
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1340
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1341
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1342
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1343
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1344
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1345
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_n-ct1346
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_12)) (currstate s_0_13) )
+)
+
+(:action violate-activity_n-ct1347
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1348
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1349
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1350
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1351
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1352
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1353
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1354
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1355
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1356
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1357
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1358
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1359
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1360
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1361
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1362
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1363
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1364
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1365
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1366
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1367
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1368
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1369
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_n-ct1370
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1371
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1372
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1373
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1374
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1375
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1376
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1377
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1378
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1379
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1380
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1381
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1382
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1383
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1384
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1385
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1386
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_m-ct1387
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_10)) (currstate s_0_11) )
+)
+
+(:action violate-activity_m-ct1388
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1389
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1390
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1391
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1392
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1393
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1394
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1395
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1396
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1397
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1398
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1399
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1400
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1401
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1402
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1403
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1404
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1405
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1406
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1407
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1408
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1409
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1410
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1411
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1412
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1413
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1414
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1415
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1416
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_m-ct1417
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1418
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1419
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1420
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1421
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1422
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1423
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1424
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1425
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1426
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1427
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1428
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1429
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1430
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1431
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1432
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1433
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1434
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1435
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1436
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1437
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1438
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1439
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_l-ct1440
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_11)) (currstate s_0_12) )
+)
+
+(:action violate-activity_l-ct1441
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1442
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1443
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1444
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1445
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1446
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1447
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1448
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1449
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1450
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1451
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1452
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1453
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1454
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1455
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1456
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1457
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1458
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1459
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1460
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1461
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1462
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1463
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1464
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_l-ct1465
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1466
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1467
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1468
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1469
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_c-ct1470
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_1)) (currstate s_0_2) )
+)
+
+(:action violate-activity_c-ct1471
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1472
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1473
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1474
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1475
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1476
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1477
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1478
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1479
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1480
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1481
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1482
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1483
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1484
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1485
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1486
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1487
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1488
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1489
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1490
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1491
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1492
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1493
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1494
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1495
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1496
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1497
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1498
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1499
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1500
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1501
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1502
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1503
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1504
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1505
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1506
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1507
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1508
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1509
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1510
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1511
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1512
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_c-ct1513
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_b-ct1514
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_9) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_9)) (currstate s_0_35) )
+)
+
+(:action violate-activity_b-ct1515
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1516
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1517
+:precondition (and (not (violated)) (currstate s_0_2) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1518
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1519
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1520
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1521
+:precondition (and (not (violated)) (currstate s_0_5) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1522
+:precondition (and (not (violated)) (currstate s_0_17) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_b-ct1523
+:precondition (and (recovery_finished) (not (violated)) (currstate s_3_1) (not (currstate s_0_9)) (not (currstate s_0_26)) (not (currstate s_0_27)) (not (currstate s_0_2)) (not (currstate s_0_10)) (not (currstate s_0_15)) (not (currstate s_0_16)) (not (currstate s_0_5)) (not (currstate s_0_17)) (not (currstate s_0_32)) (not (currstate s_0_31)) (not (currstate s_0_30)) (not (currstate s_0_22)) (not (currstate s_0_23)) (not (currstate s_0_34)) (not (currstate s_0_0)) (not (currstate s_0_26)) (not (currstate s_0_12)) (not (currstate s_0_35)) (not (currstate s_0_20)) (not (currstate s_0_21)) (not (currstate s_0_7)) (not (currstate s_0_16)) (not (currstate s_0_14)) (not (currstate s_0_19)) (not (currstate s_0_33)) (not (currstate s_0_32)) (not (currstate s_0_6)) (not (currstate s_0_13)) (not (currstate s_0_1)) (not (currstate s_0_16)) (not (currstate s_0_26)) (not (currstate s_0_24)) (not (currstate s_0_29)) (not (currstate s_0_34)) (not (currstate s_0_3)) (not (currstate s_0_27)) (not (currstate s_0_28)) (not (currstate s_0_10)) (not (currstate s_0_8)) (not (currstate s_0_4)) (not (currstate s_0_15)) (not (currstate s_0_25)) (not (currstate s_0_11)) (not (currstate s_0_15)) (not (currstate s_0_18)) (not (currstate s_0_20))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_3_1)) (currstate s_3_0) )
+)
+
+(:action violate-activity_b-ct1524
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1525
+:precondition (and (not (violated)) (currstate s_0_31) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1526
+:precondition (and (not (violated)) (currstate s_0_30) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1527
+:precondition (and (not (violated)) (currstate s_0_22) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1528
+:precondition (and (not (violated)) (currstate s_0_23) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1529
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1530
+:precondition (and (not (violated)) (currstate s_0_0) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1531
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1532
+:precondition (and (not (violated)) (currstate s_0_12) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1533
+:precondition (and (not (violated)) (currstate s_0_35) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1534
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1535
+:precondition (and (not (violated)) (currstate s_0_21) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1536
+:precondition (and (not (violated)) (currstate s_0_7) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1537
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1538
+:precondition (and (not (violated)) (currstate s_0_14) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1539
+:precondition (and (not (violated)) (currstate s_0_19) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1540
+:precondition (and (not (violated)) (currstate s_0_33) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1541
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1542
+:precondition (and (not (violated)) (currstate s_0_6) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1543
+:precondition (and (not (violated)) (currstate s_0_13) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1544
+:precondition (and (not (violated)) (currstate s_0_1) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1545
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1546
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1547
+:precondition (and (not (violated)) (currstate s_0_24) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1548
+:precondition (and (not (violated)) (currstate s_0_29) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1549
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1550
+:precondition (and (not (violated)) (currstate s_0_3) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1551
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1552
+:precondition (and (not (violated)) (currstate s_0_28) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1553
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1554
+:precondition (and (not (violated)) (currstate s_0_8) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1555
+:precondition (and (not (violated)) (currstate s_0_4) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1556
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1557
+:precondition (and (not (violated)) (currstate s_0_25) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1558
+:precondition (and (not (violated)) (currstate s_0_11) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1559
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1560
+:precondition (and (not (violated)) (currstate s_0_18) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1561
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_3_1))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_b-ct1562
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_9) (currstate s_3_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_9)) (currstate s_0_35) (not (currstate s_3_1)) (currstate s_3_0) )
+)
+
+(:action violate-activity_b-ct1563
+:precondition (and (not (violated)) (currstate s_0_26) (currstate s_3_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (not (currstate s_3_1)) (currstate s_3_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1564
+:precondition (and (not (violated)) (currstate s_0_27) (currstate s_3_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (not (currstate s_3_1)) (currstate s_3_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1565
+:precondition (and (not (violated)) (currstate s_0_2) (currstate s_3_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (not (currstate s_3_1)) (currstate s_3_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1566
+:precondition (and (not (violated)) (currstate s_0_10) (currstate s_3_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (not (currstate s_3_1)) (currstate s_3_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1567
+:precondition (and (not (violated)) (currstate s_0_15) (currstate s_3_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (not (currstate s_3_1)) (currstate s_3_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1568
+:precondition (and (not (violated)) (currstate s_0_16) (currstate s_3_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (not (currstate s_3_1)) (currstate s_3_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1569
+:precondition (and (not (violated)) (currstate s_0_5) (currstate s_3_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (not (currstate s_3_1)) (currstate s_3_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1570
+:precondition (and (not (violated)) (currstate s_0_17) (currstate s_3_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (not (currstate s_3_1)) (currstate s_3_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1571
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1572
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1573
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1574
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1575
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1576
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1577
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1578
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1579
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1580
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1581
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1582
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1583
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1584
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1585
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1586
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1587
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1588
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1589
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1590
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1591
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1592
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1593
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1594
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1595
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1596
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1597
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1598
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1599
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1600
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1601
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1602
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1603
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1604
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1605
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1606
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1607
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_b-ct1608
+:precondition (and (not (violated)) (currstate s_3_1) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_0) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1609
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1610
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1611
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_a-ct1612
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_0)) (currstate s_0_1) )
+)
+
+(:action violate-activity_a-ct1613
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1614
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1615
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1616
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1617
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1618
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1619
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1620
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1621
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1622
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1623
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1624
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1625
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1626
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1627
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1628
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1629
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1630
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1631
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1632
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1633
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1634
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1635
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1636
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1637
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1638
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1639
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1640
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1641
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1642
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1643
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1644
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1645
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1646
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1647
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1648
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1649
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1650
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1651
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1652
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1653
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1654
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1655
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_a-ct1656
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1657
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_g-ct1658
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_5)) (currstate s_0_6) )
+)
+
+(:action violate-activity_g-ct1659
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1660
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1661
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1662
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1663
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1664
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1665
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1666
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1667
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1668
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1669
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1670
+:precondition (and (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1671
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1672
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1673
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1674
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1675
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1676
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1677
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1678
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1679
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1680
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1681
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1682
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1683
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1684
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1685
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1686
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1687
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1688
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1689
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1690
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1691
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1692
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1693
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1694
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1695
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1696
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1697
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1698
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1699
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1700
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1701
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1702
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1703
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_g-ct1704
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1705
+:precondition (and (not (violated)) (currstate s_0_9) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1706
+:precondition (and (not (violated)) (currstate s_0_5) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1707
+:precondition (and (not (violated)) (currstate s_0_28) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1708
+:precondition (and (not (violated)) (currstate s_0_29) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1709
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1710
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1711
+:precondition (and (not (violated)) (currstate s_0_14) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1712
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1713
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1714
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1715
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1716
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1717
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1718
+:precondition (and (not (violated)) (currstate s_0_11) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1719
+:precondition (and (not (violated)) (currstate s_0_1) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1720
+:precondition (and (not (violated)) (currstate s_0_31) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1721
+:precondition (and (not (violated)) (currstate s_0_30) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1722
+:precondition (and (not (violated)) (currstate s_0_6) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1723
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1724
+:precondition (and (not (violated)) (currstate s_0_19) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1725
+:precondition (and (not (violated)) (currstate s_0_9) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1726
+:precondition (and (not (violated)) (currstate s_0_18) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1727
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_f-ct1728
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_4) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_4)) (currstate s_0_5) )
+)
+
+(:action sync-activity_f-ct1729
+:precondition (and (recovery_finished) (not (violated)) (currstate s_4_3) (not (currstate s_0_9)) (not (currstate s_0_5)) (not (currstate s_0_28)) (not (currstate s_0_29)) (not (currstate s_0_15)) (not (currstate s_0_32)) (not (currstate s_0_14)) (not (currstate s_0_27)) (not (currstate s_0_10)) (not (currstate s_0_20)) (not (currstate s_0_26)) (not (currstate s_0_34)) (not (currstate s_0_15)) (not (currstate s_0_11)) (not (currstate s_0_1)) (not (currstate s_0_31)) (not (currstate s_0_30)) (not (currstate s_0_6)) (not (currstate s_0_20)) (not (currstate s_0_19)) (not (currstate s_0_9)) (not (currstate s_0_18)) (not (currstate s_0_16)) (not (currstate s_0_4)) (not (currstate s_0_12)) (not (currstate s_0_35)) (not (currstate s_0_21)) (not (currstate s_0_16)) (not (currstate s_0_7)) (not (currstate s_0_33)) (not (currstate s_0_2)) (not (currstate s_0_0)) (not (currstate s_0_34)) (not (currstate s_0_27)) (not (currstate s_0_26)) (not (currstate s_0_25)) (not (currstate s_0_23)) (not (currstate s_0_16)) (not (currstate s_0_10)) (not (currstate s_0_8)) (not (currstate s_0_26)) (not (currstate s_0_22)) (not (currstate s_0_3)) (not (currstate s_0_24)) (not (currstate s_0_32)) (not (currstate s_0_13)) (not (currstate s_0_15)) (not (currstate s_0_17))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_4_3)) (currstate s_4_2) )
+)
+
+(:action violate-activity_f-ct1730
+:precondition (and (not (violated)) (currstate s_0_12) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_f-ct1731
+:precondition (and (recovery_finished) (not (violated)) (currstate s_4_0) (not (currstate s_0_9)) (not (currstate s_0_5)) (not (currstate s_0_28)) (not (currstate s_0_29)) (not (currstate s_0_15)) (not (currstate s_0_32)) (not (currstate s_0_14)) (not (currstate s_0_27)) (not (currstate s_0_10)) (not (currstate s_0_20)) (not (currstate s_0_26)) (not (currstate s_0_34)) (not (currstate s_0_15)) (not (currstate s_0_11)) (not (currstate s_0_1)) (not (currstate s_0_31)) (not (currstate s_0_30)) (not (currstate s_0_6)) (not (currstate s_0_20)) (not (currstate s_0_19)) (not (currstate s_0_9)) (not (currstate s_0_18)) (not (currstate s_0_16)) (not (currstate s_0_4)) (not (currstate s_0_12)) (not (currstate s_0_35)) (not (currstate s_0_21)) (not (currstate s_0_16)) (not (currstate s_0_7)) (not (currstate s_0_33)) (not (currstate s_0_2)) (not (currstate s_0_0)) (not (currstate s_0_34)) (not (currstate s_0_27)) (not (currstate s_0_26)) (not (currstate s_0_25)) (not (currstate s_0_23)) (not (currstate s_0_16)) (not (currstate s_0_10)) (not (currstate s_0_8)) (not (currstate s_0_26)) (not (currstate s_0_22)) (not (currstate s_0_3)) (not (currstate s_0_24)) (not (currstate s_0_32)) (not (currstate s_0_13)) (not (currstate s_0_15)) (not (currstate s_0_17))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) )
+)
+
+(:action violate-activity_f-ct1732
+:precondition (and (not (violated)) (currstate s_0_35) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1733
+:precondition (and (not (violated)) (currstate s_0_21) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1734
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1735
+:precondition (and (not (violated)) (currstate s_0_7) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1736
+:precondition (and (not (violated)) (currstate s_0_33) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1737
+:precondition (and (not (violated)) (currstate s_0_2) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1738
+:precondition (and (not (violated)) (currstate s_0_0) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1739
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1740
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1741
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1742
+:precondition (and (not (violated)) (currstate s_0_25) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1743
+:precondition (and (not (violated)) (currstate s_0_23) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1744
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1745
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1746
+:precondition (and (not (violated)) (currstate s_0_8) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1747
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1748
+:precondition (and (not (violated)) (currstate s_0_22) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1749
+:precondition (and (not (violated)) (currstate s_0_3) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1750
+:precondition (and (not (violated)) (currstate s_0_24) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1751
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1752
+:precondition (and (not (violated)) (currstate s_0_13) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1753
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1754
+:precondition (and (not (violated)) (currstate s_0_17) (not (currstate s_4_3)) (not (currstate s_4_0))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1755
+:precondition (and (not (violated)) (currstate s_0_9) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1756
+:precondition (and (not (violated)) (currstate s_0_9) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1757
+:precondition (and (not (violated)) (currstate s_0_5) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1758
+:precondition (and (not (violated)) (currstate s_0_5) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1759
+:precondition (and (not (violated)) (currstate s_0_28) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1760
+:precondition (and (not (violated)) (currstate s_0_28) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1761
+:precondition (and (not (violated)) (currstate s_0_29) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1762
+:precondition (and (not (violated)) (currstate s_0_29) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1763
+:precondition (and (not (violated)) (currstate s_0_15) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1764
+:precondition (and (not (violated)) (currstate s_0_15) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1765
+:precondition (and (not (violated)) (currstate s_0_32) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1766
+:precondition (and (not (violated)) (currstate s_0_32) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1767
+:precondition (and (not (violated)) (currstate s_0_14) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1768
+:precondition (and (not (violated)) (currstate s_0_14) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1769
+:precondition (and (not (violated)) (currstate s_0_27) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1770
+:precondition (and (not (violated)) (currstate s_0_27) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1771
+:precondition (and (not (violated)) (currstate s_0_10) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1772
+:precondition (and (not (violated)) (currstate s_0_10) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1773
+:precondition (and (not (violated)) (currstate s_0_20) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1774
+:precondition (and (not (violated)) (currstate s_0_20) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1775
+:precondition (and (not (violated)) (currstate s_0_26) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1776
+:precondition (and (not (violated)) (currstate s_0_26) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1777
+:precondition (and (not (violated)) (currstate s_0_34) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1778
+:precondition (and (not (violated)) (currstate s_0_34) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1779
+:precondition (and (not (violated)) (currstate s_0_15) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1780
+:precondition (and (not (violated)) (currstate s_0_15) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1781
+:precondition (and (not (violated)) (currstate s_0_11) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1782
+:precondition (and (not (violated)) (currstate s_0_11) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1783
+:precondition (and (not (violated)) (currstate s_0_1) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1784
+:precondition (and (not (violated)) (currstate s_0_1) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1785
+:precondition (and (not (violated)) (currstate s_0_31) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1786
+:precondition (and (not (violated)) (currstate s_0_31) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1787
+:precondition (and (not (violated)) (currstate s_0_30) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1788
+:precondition (and (not (violated)) (currstate s_0_30) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1789
+:precondition (and (not (violated)) (currstate s_0_6) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1790
+:precondition (and (not (violated)) (currstate s_0_6) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1791
+:precondition (and (not (violated)) (currstate s_0_20) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1792
+:precondition (and (not (violated)) (currstate s_0_20) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1793
+:precondition (and (not (violated)) (currstate s_0_19) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1794
+:precondition (and (not (violated)) (currstate s_0_19) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1795
+:precondition (and (not (violated)) (currstate s_0_9) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1796
+:precondition (and (not (violated)) (currstate s_0_9) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1797
+:precondition (and (not (violated)) (currstate s_0_18) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1798
+:precondition (and (not (violated)) (currstate s_0_18) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1799
+:precondition (and (not (violated)) (currstate s_0_16) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_2) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1800
+:precondition (and (not (violated)) (currstate s_0_16) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action sync-activity_f-ct1801
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_4) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_4)) (currstate s_0_5) (not (currstate s_4_3)) (currstate s_4_2) )
+)
+
+(:action sync-activity_f-ct1802
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_4) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_4)) (currstate s_0_5) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) )
+)
+
+(:action violate-activity_f-ct1803
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1804
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1805
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1806
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1807
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1808
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1809
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1810
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1811
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1812
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1813
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1814
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1815
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1816
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1817
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1818
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1819
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1820
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1821
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1822
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1823
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1824
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1825
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1826
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_2) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1827
+:precondition (and (not (violated)) (currstate s_0_12) (currstate s_4_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (not (currstate s_4_0)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1828
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_35)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1829
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_21)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1830
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_16)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1831
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_7)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1832
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_33)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1833
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_2)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1834
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_0)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1835
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_34)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1836
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_27)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1837
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_26)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1838
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_25)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1839
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_23)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1840
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_16)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1841
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_10)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1842
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_8)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1843
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_26)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1844
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_22)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1845
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_3)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1846
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_24)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1847
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_32)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1848
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_13)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1849
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_15)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_f-ct1850
+:precondition (and (not (violated)) (currstate s_4_0) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_1) (not (currstate s_0_17)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1851
+:precondition (and (not (violated)) (currstate s_0_9) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1852
+:precondition (and (not (violated)) (currstate s_0_5) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1853
+:precondition (and (not (violated)) (currstate s_0_28) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1854
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1855
+:precondition (and (not (violated)) (currstate s_0_14) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1856
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1857
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1858
+:precondition (and (not (violated)) (currstate s_0_29) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1859
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1860
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1861
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1862
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1863
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1864
+:precondition (and (not (violated)) (currstate s_0_11) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1865
+:precondition (and (not (violated)) (currstate s_0_9) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1866
+:precondition (and (not (violated)) (currstate s_0_18) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1867
+:precondition (and (not (violated)) (currstate s_0_6) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1868
+:precondition (and (not (violated)) (currstate s_0_31) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1869
+:precondition (and (not (violated)) (currstate s_0_1) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1870
+:precondition (and (not (violated)) (currstate s_0_30) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1871
+:precondition (and (not (violated)) (currstate s_0_19) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1872
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1873
+:precondition (and (not (violated)) (currstate s_0_20) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1874
+:precondition (and (not (violated)) (currstate s_0_12) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_e-ct1875
+:precondition (and (recovery_finished) (not (violated)) (currstate s_4_3) (not (currstate s_0_9)) (not (currstate s_0_5)) (not (currstate s_0_28)) (not (currstate s_0_15)) (not (currstate s_0_14)) (not (currstate s_0_32)) (not (currstate s_0_27)) (not (currstate s_0_29)) (not (currstate s_0_10)) (not (currstate s_0_20)) (not (currstate s_0_26)) (not (currstate s_0_15)) (not (currstate s_0_34)) (not (currstate s_0_11)) (not (currstate s_0_9)) (not (currstate s_0_18)) (not (currstate s_0_6)) (not (currstate s_0_31)) (not (currstate s_0_1)) (not (currstate s_0_30)) (not (currstate s_0_19)) (not (currstate s_0_16)) (not (currstate s_0_20)) (not (currstate s_0_12)) (not (currstate s_0_27)) (not (currstate s_0_35)) (not (currstate s_0_21)) (not (currstate s_0_16)) (not (currstate s_0_7)) (not (currstate s_0_3)) (not (currstate s_0_2)) (not (currstate s_0_33)) (not (currstate s_0_0)) (not (currstate s_0_34)) (not (currstate s_0_26)) (not (currstate s_0_25)) (not (currstate s_0_16)) (not (currstate s_0_22)) (not (currstate s_0_10)) (not (currstate s_0_23)) (not (currstate s_0_8)) (not (currstate s_0_4)) (not (currstate s_0_26)) (not (currstate s_0_13)) (not (currstate s_0_24)) (not (currstate s_0_32)) (not (currstate s_0_15)) (not (currstate s_0_17))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_4_3)) (currstate s_4_0) )
+)
+
+(:action violate-activity_e-ct1876
+:precondition (and (not (violated)) (currstate s_0_27) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_e-ct1877
+:precondition (and (recovery_finished) (not (violated)) (currstate s_4_2) (not (currstate s_0_9)) (not (currstate s_0_5)) (not (currstate s_0_28)) (not (currstate s_0_15)) (not (currstate s_0_14)) (not (currstate s_0_32)) (not (currstate s_0_27)) (not (currstate s_0_29)) (not (currstate s_0_10)) (not (currstate s_0_20)) (not (currstate s_0_26)) (not (currstate s_0_15)) (not (currstate s_0_34)) (not (currstate s_0_11)) (not (currstate s_0_9)) (not (currstate s_0_18)) (not (currstate s_0_6)) (not (currstate s_0_31)) (not (currstate s_0_1)) (not (currstate s_0_30)) (not (currstate s_0_19)) (not (currstate s_0_16)) (not (currstate s_0_20)) (not (currstate s_0_12)) (not (currstate s_0_27)) (not (currstate s_0_35)) (not (currstate s_0_21)) (not (currstate s_0_16)) (not (currstate s_0_7)) (not (currstate s_0_3)) (not (currstate s_0_2)) (not (currstate s_0_33)) (not (currstate s_0_0)) (not (currstate s_0_34)) (not (currstate s_0_26)) (not (currstate s_0_25)) (not (currstate s_0_16)) (not (currstate s_0_22)) (not (currstate s_0_10)) (not (currstate s_0_23)) (not (currstate s_0_8)) (not (currstate s_0_4)) (not (currstate s_0_26)) (not (currstate s_0_13)) (not (currstate s_0_24)) (not (currstate s_0_32)) (not (currstate s_0_15)) (not (currstate s_0_17))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) )
+)
+
+(:action violate-activity_e-ct1878
+:precondition (and (not (violated)) (currstate s_0_35) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1879
+:precondition (and (not (violated)) (currstate s_0_21) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1880
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1881
+:precondition (and (not (violated)) (currstate s_0_7) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_e-ct1882
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_3) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_3)) (currstate s_0_4) )
+)
+
+(:action violate-activity_e-ct1883
+:precondition (and (not (violated)) (currstate s_0_2) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1884
+:precondition (and (not (violated)) (currstate s_0_33) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1885
+:precondition (and (not (violated)) (currstate s_0_0) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1886
+:precondition (and (not (violated)) (currstate s_0_34) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1887
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1888
+:precondition (and (not (violated)) (currstate s_0_25) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1889
+:precondition (and (not (violated)) (currstate s_0_16) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1890
+:precondition (and (not (violated)) (currstate s_0_22) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1891
+:precondition (and (not (violated)) (currstate s_0_10) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1892
+:precondition (and (not (violated)) (currstate s_0_23) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1893
+:precondition (and (not (violated)) (currstate s_0_8) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1894
+:precondition (and (not (violated)) (currstate s_0_4) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1895
+:precondition (and (not (violated)) (currstate s_0_26) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1896
+:precondition (and (not (violated)) (currstate s_0_13) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1897
+:precondition (and (not (violated)) (currstate s_0_24) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1898
+:precondition (and (not (violated)) (currstate s_0_32) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1899
+:precondition (and (not (violated)) (currstate s_0_15) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1900
+:precondition (and (not (violated)) (currstate s_0_17) (not (currstate s_4_3)) (not (currstate s_4_2))  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1901
+:precondition (and (not (violated)) (currstate s_0_9) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1902
+:precondition (and (not (violated)) (currstate s_0_9) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1903
+:precondition (and (not (violated)) (currstate s_0_5) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1904
+:precondition (and (not (violated)) (currstate s_0_5) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1905
+:precondition (and (not (violated)) (currstate s_0_28) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1906
+:precondition (and (not (violated)) (currstate s_0_28) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1907
+:precondition (and (not (violated)) (currstate s_0_15) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1908
+:precondition (and (not (violated)) (currstate s_0_15) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1909
+:precondition (and (not (violated)) (currstate s_0_14) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1910
+:precondition (and (not (violated)) (currstate s_0_14) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1911
+:precondition (and (not (violated)) (currstate s_0_32) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1912
+:precondition (and (not (violated)) (currstate s_0_32) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1913
+:precondition (and (not (violated)) (currstate s_0_27) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1914
+:precondition (and (not (violated)) (currstate s_0_27) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1915
+:precondition (and (not (violated)) (currstate s_0_29) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1916
+:precondition (and (not (violated)) (currstate s_0_29) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1917
+:precondition (and (not (violated)) (currstate s_0_10) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1918
+:precondition (and (not (violated)) (currstate s_0_10) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1919
+:precondition (and (not (violated)) (currstate s_0_20) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1920
+:precondition (and (not (violated)) (currstate s_0_20) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1921
+:precondition (and (not (violated)) (currstate s_0_26) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1922
+:precondition (and (not (violated)) (currstate s_0_26) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1923
+:precondition (and (not (violated)) (currstate s_0_15) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1924
+:precondition (and (not (violated)) (currstate s_0_15) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1925
+:precondition (and (not (violated)) (currstate s_0_34) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1926
+:precondition (and (not (violated)) (currstate s_0_34) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1927
+:precondition (and (not (violated)) (currstate s_0_11) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1928
+:precondition (and (not (violated)) (currstate s_0_11) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1929
+:precondition (and (not (violated)) (currstate s_0_9) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1930
+:precondition (and (not (violated)) (currstate s_0_9) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1931
+:precondition (and (not (violated)) (currstate s_0_18) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1932
+:precondition (and (not (violated)) (currstate s_0_18) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1933
+:precondition (and (not (violated)) (currstate s_0_6) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1934
+:precondition (and (not (violated)) (currstate s_0_6) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1935
+:precondition (and (not (violated)) (currstate s_0_31) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1936
+:precondition (and (not (violated)) (currstate s_0_31) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1937
+:precondition (and (not (violated)) (currstate s_0_1) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1938
+:precondition (and (not (violated)) (currstate s_0_1) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1939
+:precondition (and (not (violated)) (currstate s_0_30) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1940
+:precondition (and (not (violated)) (currstate s_0_30) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1941
+:precondition (and (not (violated)) (currstate s_0_19) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1942
+:precondition (and (not (violated)) (currstate s_0_19) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1943
+:precondition (and (not (violated)) (currstate s_0_16) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1944
+:precondition (and (not (violated)) (currstate s_0_16) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1945
+:precondition (and (not (violated)) (currstate s_0_20) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1946
+:precondition (and (not (violated)) (currstate s_0_20) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1947
+:precondition (and (not (violated)) (currstate s_0_12) (currstate s_4_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (not (currstate s_4_3)) (currstate s_4_0) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1948
+:precondition (and (not (violated)) (currstate s_0_12) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1949
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1950
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1951
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1952
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1953
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_e-ct1954
+:precondition (and (recovery_finished) (not (violated)) (currstate s_4_3) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_3)) (currstate s_0_4) )
+)
+
+(:action violate-activity_e-ct1955
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_2)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1956
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1957
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1958
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1959
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1960
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1961
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1962
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1963
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1964
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1965
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1966
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1967
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1968
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1969
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1970
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1971
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1972
+:precondition (and (not (violated)) (currstate s_4_3) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_0) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1973
+:precondition (and (not (violated)) (currstate s_0_27) (currstate s_4_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (not (currstate s_4_2)) (currstate s_4_1) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1974
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_35)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1975
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_21)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1976
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_16)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1977
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_7)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action sync-activity_e-ct1978
+:precondition (and (recovery_finished) (not (violated)) (currstate s_4_2) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_3)) (currstate s_0_4) (blocked s_4_1) )
+)
+
+(:action violate-activity_e-ct1979
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_2)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1980
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_33)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1981
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_0)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1982
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_34)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1983
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_26)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1984
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_25)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1985
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_16)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1986
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_22)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1987
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_10)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1988
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_23)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1989
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_8)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1990
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_4)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1991
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_26)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1992
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_13)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1993
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_24)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1994
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_32)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1995
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_15)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_e-ct1996
+:precondition (and (not (violated)) (currstate s_4_2) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_1) (not (currstate s_0_17)) (currstate s_0_dummy) (blocked s_4_1) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct1997
+:precondition (and (not (violated)) (currstate s_0_5)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_5)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct1998
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct1999
+:precondition (and (not (violated)) (currstate s_0_35)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_35)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2000
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2001
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2002
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2003
+:precondition (and (not (violated)) (currstate s_0_7)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_7)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action sync-activity_d-ct2004
+:precondition (and (recovery_finished) (not (violated)) (currstate s_0_2)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (not (currstate s_0_2)) (currstate s_0_3) )
+)
+
+(:action violate-activity_d-ct2005
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2006
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2007
+:precondition (and (not (violated)) (currstate s_0_0)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_0)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2008
+:precondition (and (not (violated)) (currstate s_0_33)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_33)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2009
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2010
+:precondition (and (not (violated)) (currstate s_0_28)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_28)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2011
+:precondition (and (not (violated)) (currstate s_0_29)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_29)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2012
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2013
+:precondition (and (not (violated)) (currstate s_0_18)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_18)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2014
+:precondition (and (not (violated)) (currstate s_0_3)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_3)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2015
+:precondition (and (not (violated)) (currstate s_0_13)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_13)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2016
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2017
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2018
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2019
+:precondition (and (not (violated)) (currstate s_0_24)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_24)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2020
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2021
+:precondition (and (not (violated)) (currstate s_0_25)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_25)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2022
+:precondition (and (not (violated)) (currstate s_0_11)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_11)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2023
+:precondition (and (not (violated)) (currstate s_0_10)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_10)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2024
+:precondition (and (not (violated)) (currstate s_0_22)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_22)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2025
+:precondition (and (not (violated)) (currstate s_0_8)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_8)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2026
+:precondition (and (not (violated)) (currstate s_0_23)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_23)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2027
+:precondition (and (not (violated)) (currstate s_0_4)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_4)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2028
+:precondition (and (not (violated)) (currstate s_0_26)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_26)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2029
+:precondition (and (not (violated)) (currstate s_0_9)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_9)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2030
+:precondition (and (not (violated)) (currstate s_0_27)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_27)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2031
+:precondition (and (not (violated)) (currstate s_0_30)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_30)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2032
+:precondition (and (not (violated)) (currstate s_0_34)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_34)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2033
+:precondition (and (not (violated)) (currstate s_0_6)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_6)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2034
+:precondition (and (not (violated)) (currstate s_0_1)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_1)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2035
+:precondition (and (not (violated)) (currstate s_0_32)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_32)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2036
+:precondition (and (not (violated)) (currstate s_0_31)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_31)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2037
+:precondition (and (not (violated)) (currstate s_0_14)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_14)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2038
+:precondition (and (not (violated)) (currstate s_0_19)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_19)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2039
+:precondition (and (not (violated)) (currstate s_0_15)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_15)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2040
+:precondition (and (not (violated)) (currstate s_0_16)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_16)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2041
+:precondition (and (not (violated)) (currstate s_0_17)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_17)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2042
+:precondition (and (not (violated)) (currstate s_0_12)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_12)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2043
+:precondition (and (not (violated)) (currstate s_0_20)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_20)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate-activity_d-ct2044
+:precondition (and (not (violated)) (currstate s_0_21)  (not (blocked s_1_1))  (not (blocked s_2_1))  (not (blocked s_4_1)) )
+:effect (and (violated) (not (currstate s_0_21)) (currstate s_0_dummy) (increase (total-cost) 3))
+)
+
+(:action violate_not_co-existence_activity_i__activity_j
+:precondition (and (not (violated)) (currstate s_1_0))
+:effect (and (violated) (not (currstate s_1_0)) (currstate s_1_dummy) (not (blocked s_1_0)) (increase (total-cost) 3))
+)
+(:action violate_not_co-existence_activity_i__activity_j
+:precondition (and (not (violated)) (currstate s_1_3))
+:effect (and (violated) (not (currstate s_1_3)) (currstate s_1_dummy) (not (blocked s_1_3)) (increase (total-cost) 3))
+)
+(:action violate_not_co-existence_activity_i__activity_j
+:precondition (and (not (violated)) (currstate s_1_2))
+:effect (and (violated) (not (currstate s_1_2)) (currstate s_1_dummy) (not (blocked s_1_2)) (increase (total-cost) 3))
+)
+(:action violate_not_co-existence_activity_i__activity_j
+:precondition (and (not (violated)) (currstate s_1_1))
+:effect (and (violated) (not (currstate s_1_1)) (currstate s_1_dummy) (not (blocked s_1_1)) (increase (total-cost) 3))
+)
+(:action violate_absence_activity_h
+:precondition (and (not (violated)) (currstate s_2_0))
+:effect (and (violated) (not (currstate s_2_0)) (currstate s_2_dummy) (not (blocked s_2_0)) (increase (total-cost) 3))
+)
+(:action violate_absence_activity_h
+:precondition (and (not (violated)) (currstate s_2_1))
+:effect (and (violated) (not (currstate s_2_1)) (currstate s_2_dummy) (not (blocked s_2_1)) (increase (total-cost) 3))
+)
+(:action violate_existence_activity_b
+:precondition (and (not (violated)) (currstate s_3_1))
+:effect (and (violated) (not (currstate s_3_1)) (currstate s_3_dummy) (not (blocked s_3_1)) (increase (total-cost) 3))
+)
+(:action violate_existence_activity_b
+:precondition (and (not (violated)) (currstate s_3_0))
+:effect (and (violated) (not (currstate s_3_0)) (currstate s_3_dummy) (not (blocked s_3_0)) (increase (total-cost) 3))
+)
+(:action violate_exclusive_choice_activity_e_activity_f
+:precondition (and (not (violated)) (currstate s_4_3))
+:effect (and (violated) (not (currstate s_4_3)) (currstate s_4_dummy) (not (blocked s_4_3)) (increase (total-cost) 3))
+)
+(:action violate_exclusive_choice_activity_e_activity_f
+:precondition (and (not (violated)) (currstate s_4_2))
+:effect (and (violated) (not (currstate s_4_2)) (currstate s_4_dummy) (not (blocked s_4_2)) (increase (total-cost) 3))
+)
+(:action violate_exclusive_choice_activity_e_activity_f
+:precondition (and (not (violated)) (currstate s_4_0))
+:effect (and (violated) (not (currstate s_4_0)) (currstate s_4_dummy) (not (blocked s_4_0)) (increase (total-cost) 3))
+)
+(:action violate_exclusive_choice_activity_e_activity_f
+:precondition (and (not (violated)) (currstate s_4_1))
+:effect (and (violated) (not (currstate s_4_1)) (currstate s_4_dummy) (not (blocked s_4_1)) (increase (total-cost) 3))
+)
+(:action violate_response_activity_o_activity_p
+:precondition (and (not (violated)) (currstate s_5_0))
+:effect (and (violated) (not (currstate s_5_0)) (currstate s_5_dummy) (not (blocked s_5_0)) (increase (total-cost) 3))
+)
+(:action violate_response_activity_o_activity_p
+:precondition (and (not (violated)) (currstate s_5_1))
+:effect (and (violated) (not (currstate s_5_1)) (currstate s_5_dummy) (not (blocked s_5_1)) (increase (total-cost) 3))
+)
+(:action reset_0
+:precondition (and (currstate s_0_dummy))
+:effect (and (not (violated)) (not (currstate s_0_dummy)) (currstate s_0_0))
+)
+(:action reset_not_co-existence_activity_i__activity_j
+:precondition (and (currstate s_1_dummy))
+:effect (and (not (violated)) (not (currstate s_1_dummy)) (currstate s_1_0))
+)
+(:action reset_absence_activity_h
+:precondition (and (currstate s_2_dummy))
+:effect (and (not (violated)) (not (currstate s_2_dummy)) (currstate s_2_0))
+)
+(:action reset_existence_activity_b
+:precondition (and (currstate s_3_dummy))
+:effect (and (not (violated)) (not (currstate s_3_dummy)) (currstate s_3_1))
+)
+(:action reset_exclusive_choice_activity_e_activity_f
+:precondition (and (currstate s_4_dummy))
+:effect (and (not (violated)) (not (currstate s_4_dummy)) (currstate s_4_3))
+)
+(:action reset_response_activity_o_activity_p
+:precondition (and (currstate s_5_dummy))
+:effect (and (not (violated)) (not (currstate s_5_dummy)) (currstate s_5_0))
+)
+(:action goto-abstract_states-cs0
+:precondition (and (currstate t0) (currstate s_0_35) (currstate s_1_0) (currstate s_2_0) (currstate s_3_0) (currstate s_4_2) (currstate s_5_0) )
+:effect (and (currstate s_1_abstract) (currstate s_4_abstract) (not (currstate s_1_0)) (not (currstate s_4_2)) )
+)
+
+(:action goto-abstract_states-cs1
+:precondition (and (currstate t0) (currstate s_0_35) (currstate s_1_0) (currstate s_2_0) (currstate s_3_0) (currstate s_4_0) (currstate s_5_0) )
+:effect (and (currstate s_1_abstract) (currstate s_4_abstract) (not (currstate s_1_0)) (not (currstate s_4_0)) )
+)
+
+(:action goto-abstract_states-cs2
+:precondition (and (currstate t0) (currstate s_0_35) (currstate s_1_3) (currstate s_2_0) (currstate s_3_0) (currstate s_4_2) (currstate s_5_0) )
+:effect (and (currstate s_1_abstract) (currstate s_4_abstract) (not (currstate s_1_3)) (not (currstate s_4_2)) )
+)
+
+(:action goto-abstract_states-cs3
+:precondition (and (currstate t0) (currstate s_0_35) (currstate s_1_3) (currstate s_2_0) (currstate s_3_0) (currstate s_4_0) (currstate s_5_0) )
+:effect (and (currstate s_1_abstract) (currstate s_4_abstract) (not (currstate s_1_3)) (not (currstate s_4_0)) )
+)
+
+(:action goto-abstract_states-cs4
+:precondition (and (currstate t0) (currstate s_0_35) (currstate s_1_2) (currstate s_2_0) (currstate s_3_0) (currstate s_4_2) (currstate s_5_0) )
+:effect (and (currstate s_1_abstract) (currstate s_4_abstract) (not (currstate s_1_2)) (not (currstate s_4_2)) )
+)
+
+(:action goto-abstract_states-cs5
+:precondition (and (currstate t0) (currstate s_0_35) (currstate s_1_2) (currstate s_2_0) (currstate s_3_0) (currstate s_4_0) (currstate s_5_0) )
+:effect (and (currstate s_1_abstract) (currstate s_4_abstract) (not (currstate s_1_2)) (not (currstate s_4_0)) )
+)
+
+)

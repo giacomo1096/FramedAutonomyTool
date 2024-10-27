@@ -1,0 +1,133 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /opt/homebrew/opt/python@3.12/bin/python3.12 /Users/giacomoacitelli/Desktop/fastdownward/fast-downward-22.12/builds/release/bin/translate/translate.py general_domain.pddl ICPM24_test/pddl/D31/2.1//problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.010s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.003s wall-clock]
+Normalizing Datalog program...
+Trivial rules: Converted to facts.
+Normalizing Datalog program: [0.010s CPU, 0.001s wall-clock]
+Preparing model... [0.010s CPU, 0.012s wall-clock]
+Generated 82 rules.
+Computing model... [2.640s CPU, 2.648s wall-clock]
+19292 relevant atoms
+36989 auxiliary atoms
+56281 final queue length
+10231622 total queue pushes
+Completing instantiation... [16.000s CPU, 16.002s wall-clock]
+Instantiating: [18.660s CPU, 18.670s wall-clock]
+Computing fact groups...
+Finding invariants...
+8 initial candidates
+Finding invariants: [0.000s CPU, 0.001s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+359 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.000s CPU, 0.002s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.004s wall-clock]
+Translator axioms removed by simplifying: 0
+Computing negative axioms... [0.010s CPU, 0.008s wall-clock]
+Processing axioms: [0.020s CPU, 0.020s wall-clock]
+Translating task: [0.170s CPU, 0.169s wall-clock]
+11024 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+8 operators removed
+0 axioms removed
+46 propositions removed
+Detecting unreachable propositions: [0.050s CPU, 0.052s wall-clock]
+Reordering and filtering variables...
+336 of 336 variables necessary.
+0 of 0 mutex groups necessary.
+56 of 56 operators necessary.
+5821 of 5821 axiom rules necessary.
+Reordering and filtering variables: [0.040s CPU, 0.034s wall-clock]
+Translator variables: 336
+Translator derived variables: 24
+Translator facts: 672
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 56
+Translator axioms: 5821
+Translator task size: 62068
+warning: could not determine peak memory
+Writing output... [0.030s CPU, 0.028s wall-clock]
+Done! [18.960s CPU, 18.972s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /Users/giacomoacitelli/Desktop/fastdownward/fast-downward-22.12/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file sas_plan < output.sas
+[t=5.9409e-05s, 410596800 KB] reading input...
+[t=0.103006s, 410727872 KB] done reading input!
+[t=0.103416s, 410727872 KB] Initializing blind search heuristic...
+[t=0.10344s, 410727872 KB] Building successor generator...done!
+[t=0.103461s, 410727872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.103465s, 410727872 KB] time for successor generation creation: 1.1275e-05s
+[t=0.10347s, 410727872 KB] Variables: 336
+[t=0.103474s, 410727872 KB] FactPairs: 672
+[t=0.103477s, 410727872 KB] Bytes per state: 44
+[t=0.10352s, 410727872 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.10353s, 410727872 KB] New best heuristic value for blind: 0
+[t=0.103535s, 410727872 KB] g=0, 1 evaluated, 0 expanded
+[t=0.103545s, 410727872 KB] f = 0, 1 evaluated, 0 expanded
+[t=0.103549s, 410727872 KB] Initial heuristic value for blind: 0
+[t=0.103552s, 410727872 KB] pruning method: none
+[t=0.103939s, 410727872 KB] f = 3, 24 evaluated, 3 expanded
+[t=0.106073s, 410727872 KB] f = 6, 91 evaluated, 41 expanded
+[t=0.108874s, 410727872 KB] Solution found!
+[t=0.108878s, 410727872 KB] Actual search time: 0.0053243s
+sync activity_a (0)
+sync activity_c (0)
+violate_decl s21 s22 absence_activity_c (3)
+reset s22 s20 absence_activity_c (0)
+sync activity_d (0)
+sync activity_e (0)
+violate_decl s13 s14 not_co-existence_activity_d_activity_e (3)
+reset s14 s10 not_co-existence_activity_d_activity_e (0)
+sync activity_f (0)
+sync activity_b (0)
+[t=0.108881s, 410727872 KB] Plan length: 10 step(s).
+[t=0.108881s, 410727872 KB] Plan cost: 6
+[t=0.108881s, 410727872 KB] Expanded 113 state(s).
+[t=0.108881s, 410727872 KB] Reopened 0 state(s).
+[t=0.108881s, 410727872 KB] Evaluated 163 state(s).
+[t=0.108881s, 410727872 KB] Evaluations: 163
+[t=0.108881s, 410727872 KB] Generated 1106 state(s).
+[t=0.108881s, 410727872 KB] Dead ends: 0 state(s).
+[t=0.108881s, 410727872 KB] Expanded until last jump: 41 state(s).
+[t=0.108881s, 410727872 KB] Reopened until last jump: 0 state(s).
+[t=0.108881s, 410727872 KB] Evaluated until last jump: 91 state(s).
+[t=0.108881s, 410727872 KB] Generated until last jump: 530 state(s).
+[t=0.108881s, 410727872 KB] Number of registered states: 163
+[t=0.108881s, 410727872 KB] Int hash set load factor: 163/256 = 0.636719
+[t=0.108881s, 410727872 KB] Int hash set resizes: 8
+[t=0.108881s, 410727872 KB] Search time: 0.00536177s
+[t=0.108881s, 410727872 KB] Total time: 0.108881s
+Solution found.
+Peak memory: 410727872 KB
+Remove intermediate file output.sas
+search exit code: 0
+
+INFO     Planner time: 19.09s
+

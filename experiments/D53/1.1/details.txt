@@ -1,0 +1,10 @@
+Petrinet D53;
+0 prefix;
+1 Declare const: Not-Coexistence(activity_b,activity_aq);  (1 violated)
+Not Grounded;
+
+Algortihm: Astar blind
+
+Cost: 
+Planner time: 
+

@@ -1,0 +1,137 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /opt/homebrew/opt/python@3.12/bin/python3.12 /Users/giacomoacitelli/Desktop/fastdownward/fast-downward-22.12/builds/release/bin/translate/translate.py ICPM24_test/pddl/D41/1.4//domain1.pddl ICPM24_test/pddl/D41/1.4//problem1.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.040s CPU, 0.043s wall-clock]
+Normalizing task... [0.010s CPU, 0.009s wall-clock]
+Instantiating...
+Generating Datalog program... [0.010s CPU, 0.004s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.011s wall-clock]
+Preparing model... [0.010s CPU, 0.010s wall-clock]
+Generated 5438 rules.
+Computing model... [0.000s CPU, 0.003s wall-clock]
+1892 relevant atoms
+0 auxiliary atoms
+1892 final queue length
+5576 total queue pushes
+Completing instantiation... [0.010s CPU, 0.010s wall-clock]
+Instantiating: [0.040s CPU, 0.039s wall-clock]
+Computing fact groups...
+Finding invariants...
+6 initial candidates
+Finding invariants: [0.000s CPU, 0.001s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+48 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.000s CPU, 0.001s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Computing negative axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.001s wall-clock]
+Translating task: [0.020s CPU, 0.020s wall-clock]
+1947 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+0 propositions removed
+Detecting unreachable propositions: [0.010s CPU, 0.013s wall-clock]
+Reordering and filtering variables...
+48 of 48 variables necessary.
+0 of 0 mutex groups necessary.
+1708 of 1708 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.010s CPU, 0.004s wall-clock]
+Translator variables: 48
+Translator derived variables: 0
+Translator facts: 96
+Translator goal facts: 3
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 1708
+Translator axioms: 0
+Translator task size: 13309
+warning: could not determine peak memory
+Writing output... [0.000s CPU, 0.005s wall-clock]
+Done! [0.130s CPU, 0.136s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /Users/giacomoacitelli/Desktop/fastdownward/fast-downward-22.12/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file sas_plan < output.sas
+[t=5.5309e-05s, 410596800 KB] reading input...
+[t=0.0179143s, 410727872 KB] done reading input!
+[t=0.0182916s, 410727872 KB] Initializing blind search heuristic...
+[t=0.0183095s, 410727872 KB] Building successor generator...done!
+[t=0.0185133s, 410727872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0185171s, 410727872 KB] time for successor generation creation: 0.000195242s
+[t=0.0185213s, 410727872 KB] Variables: 48
+[t=0.0185246s, 410727872 KB] FactPairs: 96
+[t=0.0185274s, 410727872 KB] Bytes per state: 8
+[t=0.0185666s, 410727872 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.0185759s, 410727872 KB] New best heuristic value for blind: 0
+[t=0.0185796s, 410727872 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0185828s, 410727872 KB] f = 0, 1 evaluated, 0 expanded
+[t=0.0185923s, 410727872 KB] Initial heuristic value for blind: 0
+[t=0.0185951s, 410727872 KB] pruning method: none
+[t=0.0186054s, 410727872 KB] f = 3, 6 evaluated, 1 expanded
+[t=0.0186427s, 410727872 KB] f = 6, 31 evaluated, 18 expanded
+[t=0.01869s, 410727872 KB] Solution found!
+[t=0.0186937s, 410727872 KB] Actual search time: 9.7211e-05s
+prefix-violate-activity_t-ct697_0  (3)
+reset_0  (0)
+sync-activity_a-ct1417  (0)
+sync-activity_c-ct1323  (0)
+sync-activity_d-ct1613  (0)
+sync-activity_e-ct1569  (0)
+sync-activity_f-ct1510  (0)
+sync-activity_g-ct1463  (0)
+sync-activity_h-ct1084  (0)
+sync-activity_i-ct1012  (0)
+sync-activity_j-ct864  (0)
+violate_not_co-existence_activity_i__activity_j  (3)
+reset_not_co-existence_activity_i__activity_j  (0)
+sync-activity_b-ct1367  (0)
+goto-abstract_states-cs0  (0)
+[t=0.018696s, 410727872 KB] Plan length: 15 step(s).
+[t=0.018696s, 410727872 KB] Plan cost: 6
+[t=0.018696s, 410727872 KB] Expanded 46 state(s).
+[t=0.018696s, 410727872 KB] Reopened 0 state(s).
+[t=0.018696s, 410727872 KB] Evaluated 53 state(s).
+[t=0.018696s, 410727872 KB] Evaluations: 53
+[t=0.018696s, 410727872 KB] Generated 938 state(s).
+[t=0.018696s, 410727872 KB] Dead ends: 0 state(s).
+[t=0.018696s, 410727872 KB] Expanded until last jump: 18 state(s).
+[t=0.018696s, 410727872 KB] Reopened until last jump: 0 state(s).
+[t=0.018696s, 410727872 KB] Evaluated until last jump: 31 state(s).
+[t=0.018696s, 410727872 KB] Generated until last jump: 390 state(s).
+[t=0.018696s, 410727872 KB] Number of registered states: 53
+[t=0.018696s, 410727872 KB] Int hash set load factor: 53/64 = 0.828125
+[t=0.018696s, 410727872 KB] Int hash set resizes: 6
+[t=0.018696s, 410727872 KB] Search time: 0.000129929s
+[t=0.018696s, 410727872 KB] Total time: 0.018696s
+Solution found.
+Peak memory: 410727872 KB
+Remove intermediate file output.sas
+search exit code: 0
+
+INFO     Planner time: 0.18s
+

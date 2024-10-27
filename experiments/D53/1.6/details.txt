@@ -1,0 +1,11 @@
+Petrinet D53;
+3 prefix: 2 violating activity (t,k,a)
+1 Declare const (1 violating): Not-Coexistence(activity_b,activity_aq);  
+Grounded;
+
+Algortihm: Astar blind
+
+Cost: 
+Planner time:  
+Grounding time: 19177 ms
+

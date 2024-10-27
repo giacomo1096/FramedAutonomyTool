@@ -1,0 +1,11 @@
+Petrinet D53;
+1 prefix: 1 violating --> activity_t
+3 Declare const (2 violating): Not-Coexistence(activity_b,activity_aq) Absence(activity_ar) Existence(activity_c);  
+Grounded;
+
+Algortihm: Astar blind
+
+Cost: 
+Planner time:  
+Grounding time: 20690 ms
+

@@ -1,0 +1,10 @@
+Petrinet D53;
+3 prefix: 2 violating activity (t,k,a)
+5 Declare const (3 violating): Not-Coexistence(activity_b,activity_aq) Absence(activity_ar) ExclusiveChoice(activity_a,activity_b) Existence(activity_c) Response(activity_d,activity_e);  
+not Grounded;
+
+Algortihm: Astar blind
+
+Cost: 
+Planner time: 
+
