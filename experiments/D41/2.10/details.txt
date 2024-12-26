@@ -1,0 +1,1 @@
+Grounding time: 60 ms

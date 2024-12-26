@@ -1,0 +1,12 @@
+Petrinet D31;
+6 prefix (4 violating): activity_t activity_k activity_g activity_u activity_a activity_c
+7 Declare const (4 violating): Not-Coexistence(activity_d,activity_e), Absence(activity_c), ExclusiveChoice(activity_f, activity_b), 
+Precedence(activity_d, activity_a), Existence(activity_a), Response(activity_m,activity_n), Choice(activity_c, activity_f)
+Not Grounded;
+
+Algortihm: Astar blind
+
+Cost: 
+Planner time: 
+
+

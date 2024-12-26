@@ -7,5 +7,5 @@ Algortihm: Astar blind
 
 Cost: 
 Planner time: 
-Groundig time: 11741 ms
+Grounding time: 11741 ms
 
