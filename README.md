@@ -20,16 +20,19 @@ The JAR file requires the following inputs:
 #### Example Command:
 Run the tool using the following command:
 ```bash
-java -jar FramedAutonomyTool.jar declare.decl prefix.txt d53.pnml
+java -jar FramedAutonomyTool.jar declare.decl prefix.txt petrinet.pnml
 ```
 - Replace `declare.decl` with the path to your Declare constraints file.
 - Replace `prefix.txt` with the path to your prefix file or an empty file.
-- Replace `d53.pnml` with the path to your Petri net file.
+- Replace `petrinet.pnml` with the path to your Petri net file.
+
+#### Output:
+The tool generates a **PDDL file** representing the planning problem derived from the inputs. This file can be used as input for AI planners like Fast Downward to compute a solution.
 
 ### Including Evaluation Inputs and Results
 The inputs used for the Evaluation, along with their corresponding results, are provided in the `experiments` folder. Users can explore this folder to understand the test cases and the outcomes achieved during the evaluation phase.
 
-For the tests, we used version 22.12 of the Fast Downward planner, which can be downloaded [here](https://www.fast-downward.org/Releases/22.12).
+For the tests, we used version 22.12 of the Fast Downward planner, which can be downloaded [here](https://www.fast-downward.org/Releases/22.12). As a search algorithm, we employed `astar(blind())` to compute the solutions.
 
 ### Requirements
 1. Java SE 17
