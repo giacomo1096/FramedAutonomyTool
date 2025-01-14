@@ -3,7 +3,7 @@
 ## Description
 The tool implements an automata-based technique to achieve framed autonomy in AI-augmented Business Process Management Systems (ABPMSs). It combines procedural and declarative constraints through deterministic finite state automata (DFAs), guiding process continuations with minimal violation costs. This technique is powered by Automated Planning in Artificial Intelligence to recommend near-optimal process flows while respecting predefined boundaries.
 
-## How to use the tool
+## How to Use the Tool
 The tool is known to work on Mac and Linux machines.
 
 A screencast of the tool in action is provided [here](https://youtu.be/YkLZGpnu6S0).
@@ -29,7 +29,7 @@ java -jar FramedAutonomyTool.jar declare.decl prefix.txt petrinet.pnml
 #### Output:
 The tool generates a **PDDL file** representing the planning problem derived from the inputs. This file can be used as input for AI planners like Fast Downward to compute a solution.
 
-### Including Evaluation Inputs and Results
+### Performing the Experiments
 The inputs used for the Evaluation, along with their corresponding results, are provided in the `experiments` folder. Users can explore this folder to understand the test cases and the outcomes achieved during the evaluation phase.
 
 For the tests, we used version 22.12 of the Fast Downward planner, which can be downloaded [here](https://www.fast-downward.org/Releases/22.12). As a search algorithm, we employed `astar(blind())` to compute the solutions.
